@@ -7,6 +7,8 @@
 
 import UIKit
 
+var values = [String]()
+
 class SuggestionsViewController: UIViewController, UITableViewDataSource {
     
     var policyResponse: PolicyResponse?
@@ -99,7 +101,7 @@ class SuggestionsViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomSuggestionCell
         var len = policyResponse!.policies.count
-        let policy = policyResponse!.policies[len - indexPath.row]
+        let policy = policyResponse!.policies[len - indexPath.row - 1]
 
         cell.image.image = UIImage(named: policy.tag)
         cell.title.text = policy.tag
@@ -113,6 +115,9 @@ class CustomSuggestionCell: UITableViewCell {
     let image = UIImageView()
     let title = UILabel()
     let desc = UILabel()
+    let plusButton = UIButton()
+    
+    var array = SharedArrayManager.shared.sharedArray
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -149,8 +154,40 @@ class CustomSuggestionCell: UITableViewCell {
         // Description
         desc.frame = CGRect(x: 100, y: 50, width: 200, height: 50)
         
-        
+        let rightEdgeX = contentView.frame.width + 10
+
+        plusButton.frame = CGRect(x: rightEdgeX,
+                                  y: 10,
+                                  width: 30,
+                                  height: 30)
+        plusButton.backgroundColor = .green
+        plusButton.setTitle("+", for: .normal)
+        plusButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        plusButton.layer.cornerRadius = 15
+
+        addSubview(plusButton)
+        plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
         self.backgroundColor = UIColor.darkGray
+    }
+    
+    @objc func plusButtonTapped() {
+        // Add the title to the global array
+        if let titleText = title.text {
+            goodPolicies.listOfPolicies.append(title.text!)
+            print(goodPolicies.listOfPolicies)
+        }
+        
+        image.frame = CGRect(x: 100, y: 10, width: 0, height: 0)
+        title.frame = CGRect(x: 100, y: 10, width: 0, height: 0)
+        desc.frame = CGRect(x: 100, y: 10, width: 0, height: 0)
+        layer.borderWidth = 0
+        layer.cornerRadius = 0
+        plusButton.setTitle("", for: .normal)
+        if let tableView = superview as? UITableView, let indexPath = tableView.indexPath(for: self) {
+            self.backgroundColor = tableView.backgroundColor
+            plusButton.backgroundColor = tableView.backgroundColor
+            
+        }
     }
     
     override func prepareForReuse() {
@@ -165,4 +202,7 @@ class CustomSuggestionCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+
 }
