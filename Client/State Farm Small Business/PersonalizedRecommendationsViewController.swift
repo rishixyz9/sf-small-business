@@ -9,6 +9,7 @@ import UIKit
 
 struct goodPolicies {
     static var listOfPolicies = [String]()
+    static var policyStuff = PolicyResponse.self
 }
 
 class PersonalizedRecommendationsViewController: UIViewController, UITableViewDataSource {
@@ -16,6 +17,10 @@ class PersonalizedRecommendationsViewController: UIViewController, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     var policyResponse: PolicyResponse?
+    
+    var receivedMessage: String?
+    
+    var globdata = ""
     
     var imageNames = ["Business Owners Policies", "Contractor Policies", "Farm and Ranch Insurance", "Surety and Fidelity Bonds", "Workers' Compensation", "Group Life Insurance", "Small Business Life Insurance", "Business Continuity Plans with Buy-sell Agreements", "Key Employee Insurance", "Employee Incentive Programs", "Commercial Auto Insurance", "Inland Marine Insurance", "Professional Liability Insurance (Errors and Omissions)", "Commercial Liability Umbrella Policy", "Employment Practices Liability Insurance", "Not-for-profit Organizations Insurance", "Condominium and Homeowners Associations Insurance", "Small Business Retirement Plans", "Individual 401(k)", "Simplified Employee Pension (SEP IRA)", "Simple IRA", "Estate Planning", "Overview", "Checking, Savings and Money Market", "Payment Solutions", "Lending", "Credit Cards"]
     
@@ -45,57 +50,133 @@ class PersonalizedRecommendationsViewController: UIViewController, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.rowHeight = 100
+        
+//        let sampleJSON = """
+//            {
+//                "policies": [
+//                    {
+//                        "score": 1,
+//                        "tag": "Small Business Retirement Plans"
+//                    },
+//                    {
+//                        "score": 0.8,
+//                        "tag": "Inland Marine Insurance"
+//                    },
+//                    {
+//                        "score": 0.7,
+//                        "tag": "Commercial Liability Umbrella Policy"
+//                    },
+//                    {
+//                        "score": 0.5,
+//                        "tag": "Commercial Auto Insurance"
+//                    },
+//                    {
+//                        "score": 0.4,
+//                        "tag": "Contractor Policies"
+//                    }
+//                ]
+//            }
+//        """
+//
+//        if let jsonData = sampleJSON.data(using: .utf8) {
+//            do {
+//                let decoder = JSONDecoder()
+//                policyResponse = try decoder.decode(PolicyResponse.self, from: jsonData)
+//            } catch {
+//                print("Error decoding JSON: \(error)")
+//            }
+//        }
+        
+//        for policy in policyResponse!.policies {
+//            if (policy.score >= 0.7) {
+//                goodPolicies.listOfPolicies.append(policy.tag)
+//            }
+//        }
+        
+        
+        
+        let nib = UINib.init(nibName: "PolicyTableViewCell", bundle: nil)
+        //tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        var msg: String = ""
+        
+        if let message = receivedMessage {
+            print(message)
+            msg = message
+        }
+        
         
         var array = SharedArrayManager.shared.sharedArray
         
-        let sampleJSON = """
-            {
-                "policies": [
-                    {
-                        "score": 1,
-                        "tag": "Small Business Retirement Plans"
-                    },
-                    {
-                        "score": 0.8,
-                        "tag": "Inland Marine Insurance"
-                    },
-                    {
-                        "score": 0.7,
-                        "tag": "Commercial Liability Umbrella Policy"
-                    },
-                    {
-                        "score": 0.5,
-                        "tag": "Commercial Auto Insurance"
-                    },
-                    {
-                        "score": 0.4,
-                        "tag": "Contractor Policies"
-                    }
-                ]
-            }
-        """
-
-        if let jsonData = sampleJSON.data(using: .utf8) {
-            do {
-                let decoder = JSONDecoder()
-                policyResponse = try decoder.decode(PolicyResponse.self, from: jsonData)
-            } catch {
-                print("Error decoding JSON: \(error)")
-            }
+        let parameters = ["message": msg]
+        
+        print("help help help" + msg)// Replace with your JSON data
+        
+        // Convert the dictionary to JSON data
+        guard let jsonData = try? JSONSerialization.data(withJSONObject: parameters) else {
+            print("Error creating JSON data")
+            return
         }
+        
+        // Prepare the URL and URLRequest for the POST request
+        let urlString = "http://127.0.0.1:5000/getweights"
+        guard let url = URL(string: urlString) else {
+            print("Invalid URL")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        // Perform the POST request
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("Error: (error)")
+            } else if let data = data {
+                
+                // Handle the response data here
+                if let responseString = String(data: data, encoding: .utf8) {
+                    print("Response: \(responseString)")
+                    self.globdata = responseString
+                    
+                }
+
+                
+
+                
+            }
+        }.resume()
+        
+        sleep(45)
+        
+        if let jsonData = globdata.data(using: .utf8) {
+            print(jsonData)
+            let decoder = JSONDecoder()
+            do {
+                            let decoder = JSONDecoder()
+                            policyResponse = try decoder.decode(PolicyResponse.self, from: jsonData)
+                            print("works mofo")
+                        } catch {
+                            print("Error decoding JSON: \(error)")
+                        }
+                
+        }
+        
+        tableView.dataSource = self
+        tableView.rowHeight = 100
         
         for policy in policyResponse!.policies {
-            if (policy.score >= 0.7) {
-                goodPolicies.listOfPolicies.append(policy.tag)
-            }
-        }
+                    if (policy.score >= 0.7) {
+                        goodPolicies.listOfPolicies.append(policy.tag)
+                    }
+                }
         
-        
-        print(goodPolicies.listOfPolicies)
-        
-        let nib = UINib.init(nibName: "PolicyTableViewCell", bundle: nil)
         tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
         
     }

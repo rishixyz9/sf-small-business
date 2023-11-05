@@ -14,7 +14,9 @@ def hello_world():
 @app.route("/getweights", methods = ['POST'])
 def return_weights():
     message = request.get_json()
-    return get_weights.get_weights(message)
+    res = get_weights.get_weights(message)
+    print(res)
+    return res
 
 @app.route("/getmatches", methods=['POST'])
 def return_matches():

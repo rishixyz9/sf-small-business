@@ -8,6 +8,8 @@
 import UIKit
 
 class AgentViewController: UIViewController {
+    
+    var agentNames = ["Jennifer Webb", ]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -15,5 +17,7 @@ class AgentViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    
 
 }

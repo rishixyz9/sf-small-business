@@ -241,6 +241,9 @@
                                 <color key="backgroundColor" white="0.16" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidChange:" destination="NOs-Wa-3Hi" eventType="editingDidEnd" id="ctT-6X-qf0"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loz-SG-C7U">
                                 <rect key="frame" x="16" y="486" width="361" height="65"/>
@@ -248,7 +251,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <segue destination="Ugy-07-cS3" kind="presentation" modalPresentationStyle="fullScreen" id="clI-2X-jYQ"/>
+                                    <action selector="buttonTapped:" destination="NOs-Wa-3Hi" eventType="touchUpInside" id="7F5-cw-08C"/>
+                                    <segue destination="Ugy-07-cS3" kind="presentation" identifier="segueToSecondVC" modalPresentationStyle="fullScreen" id="clI-2X-jYQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -350,15 +354,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="All Plans" translatesAutoresizingMaskIntoConstraints="NO" id="KOS-h5-Ol8">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="-1" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lGI-8x-ODH">
                                 <rect key="frame" x="16" y="244" width="361" height="470"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.14537102129999999" green="0.16179371840000001" blue="0.1016761134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="0.16" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.14537102129999999" green="0.16179371840000001" blue="0.1016761134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roC-pf-Bd8">
+                                <rect key="frame" x="54" y="753" width="302" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="voy-ka-bi1" kind="presentation" modalPresentationStyle="fullScreen" id="y2f-zD-4JH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IHN-Vk-Oij"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -379,23 +393,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9yM-Jb-Kek">
-                                <rect key="frame" x="0.0" y="506" width="393" height="346"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" red="0.16179371840000001" green="0.16179371840000001" blue="0.16179371840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="skW-zD-yrJ">
                                 <rect key="frame" x="0.0" y="59" width="393" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Agents" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-2j-XYo">
+                                <rect key="frame" x="0.0" y="502" width="393" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yZh-3B-acX"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="9yM-Jb-Kek" id="MkA-Ef-yQn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dek-IR-qdR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,6 +462,7 @@
         <segue reference="xh0-gi-s3w"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Agents" width="176.66667175292969" height="153.33332824707031"/>
         <image name="All Plans" width="176.66667175292969" height="382"/>
         <image name="Already Have Account" width="207.33332824707031" height="34"/>
         <image name="Create Account" width="206.66667175292969" height="34"/>
@@ -468,9 +478,6 @@
         <image name="map" width="176.66667175292969" height="196"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
