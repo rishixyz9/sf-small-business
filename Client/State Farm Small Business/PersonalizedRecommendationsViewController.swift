@@ -7,9 +7,11 @@
 
 import UIKit
 
-class PersonalizedRecommendationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PersonalizedRecommendationsViewController: UIViewController, UITableViewDataSource {
     
-    @IBOutlet weak var RecommendedPolicyTable: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var policyResponse: PolicyResponse?
     
     var imageNames = ["Business Owners Policies", "Contractor Policies", "Farm and Ranch Insurance", "Surety and Fidelity Bonds", "Workers' Compensation", "Group Life Insurance", "Small Business Life Insurance", "Business Continuity Plans with Buy-sell Agreements", "Key Employee Insurance", "Employee Incentive Programs", "Commercial Auto Insurance", "Inland Marine Insurance", "Professional Liability Insurance (Errors and Omissions)", "Commercial Liability Umbrella Policy", "Employment Practices Liability Insurance", "Not-for-profit Organizations Insurance", "Condominium and Homeowners Associations Insurance", "Small Business Retirement Plans", "Individual 401(k)", "Simplified Employee Pension (SEP IRA)", "Simple IRA", "Estate Planning", "Overview", "Checking, Savings and Money Market", "Payment Solutions", "Lending", "Credit Cards"]
     
@@ -36,26 +38,71 @@ class PersonalizedRecommendationsViewController: UIViewController, UITableViewDe
                                         "Simple IRA": "Designed for businesses with less than 100 employees, this benefits package helps plan for successful futures.",
                                         "Estate Planning": "Set up a simple estate plan, such as a will, trust, or business continuation plans."]
     
-    var response = [1]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        
+        let sampleJSON = """
+            {
+                "policies": [
+                    {
+                        "score": 1,
+                        "tag": "Logo With Name"
+                    },
+                    {
+                        "score": 1,
+                        "tag": "Logo With Name"
+                    }
+                ]
+            }
+        """
+
+        if let jsonData = sampleJSON.data(using: .utf8) {
+            do {
+                let decoder = JSONDecoder()
+                policyResponse = try decoder.decode(PolicyResponse.self, from: jsonData)
+            } catch {
+                print("Error decoding JSON: \(error)")
+            }
+        }
         
         let nib = UINib.init(nibName: "PolicyTableViewCell", bundle: nil)
-        RecommendedPolicyTable.register(nib, forCellReuseIdentifier: "policyCell")
+        tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return response.count
+        return policyResponse?.policies.count ?? 2
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = RecommendedPolicyTable.dequeueReusableCell(withIdentifier: "policyCell", for: indexPath) as? PolicyTableViewCell
-        cell?.commonInit(imageNames[indexPath.row])
-        return cell!
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
+        let thing = policyResponse?.policies[indexPath.row]
+        cell.image.image = UIImage(named: thing?.tag ?? "Already Have Account")
+        return cell
     }
-    
     
 
+}
+
+class CustomCell: UITableViewCell {
+    let image = UIImageView()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        addSubview(image)
+        image.frame = CGRect(x: 10, y: 10, width: 100, height: 100)
+        self.backgroundColor = UIColor.darkGray
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+struct Fruit {
+    var image: String
 }
