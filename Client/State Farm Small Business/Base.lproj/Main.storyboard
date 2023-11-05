@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjF-i0-r4z">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -8,30 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="State_Farm_Small_Business" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="EVi-g6-wX9">
-                                <rect key="frame" x="76" y="362" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <connections>
-                        <segue destination="yjF-i0-r4z" kind="modal" identifier="GoToLogin" modalPresentationStyle="fullScreen" id="vWb-8G-69h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-8" y="4"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="DNC-ir-0YK">
             <objects>
@@ -220,7 +196,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <segue destination="NOs-Wa-3Hi" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="YLL-D4-uja"/>
+                                    <segue destination="NOs-Wa-3Hi" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="kgb-Wn-4bA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -235,10 +211,10 @@
             </objects>
             <point key="canvasLocation" x="4151.9083969465646" y="3.5211267605633805"/>
         </scene>
-        <!--Personalize One-->
+        <!--View Controller-->
         <scene sceneID="SOR-Dc-7UG">
             <objects>
-                <viewController id="NOs-Wa-3Hi" customClass="PersonalizeOne" customModule="State_Farm_Small_Business" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NOs-Wa-3Hi" customClass="ViewController" customModule="State_Farm_Small_Business" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ub4-wD-oIW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +229,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-hZ-nEi">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sample Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hm4-wl-wW1">
                                 <rect key="frame" x="16" y="198" width="361" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.16" alpha="1" colorSpace="calibratedWhite"/>
@@ -307,7 +283,6 @@
         <image name="Create Account" width="206.66667175292969" height="34"/>
         <image name="Home Bar 1" width="211.33332824707031" height="36"/>
         <image name="Image" width="229.33332824707031" height="455.33334350585938"/>
-        <image name="Image 1" width="1280" height="720"/>
         <image name="Insurance page" width="218.66667175292969" height="444"/>
         <image name="Logo without Name" width="1280" height="720"/>
         <image name="NLP Page 1" width="229.33332824707031" height="468.66665649414062"/>
