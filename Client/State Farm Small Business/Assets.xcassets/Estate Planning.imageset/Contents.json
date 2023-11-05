@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Man HR is looking for an online resume of employees.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Man HR is looking for an online resume of employees 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Man HR is looking for an online resume of employees 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
