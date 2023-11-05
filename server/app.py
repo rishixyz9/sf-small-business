@@ -21,4 +21,6 @@ def return_weights():
 @app.route("/getmatches", methods=['POST'])
 def return_matches():
     user_weights = request.get_json()
-    return get_agents.get_matches(user_weights)
+    res = get_agents.get_matches(user_weights)
+    print(res)
+    return res
