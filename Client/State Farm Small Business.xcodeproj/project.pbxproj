@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7115E0C2AF70EAD00ECA270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E0B2AF70EAD00ECA270 /* LoginViewController.swift */; };
+		A7115E102AF740B800ECA270 /* PersonalizeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E0F2AF740B800ECA270 /* PersonalizeOne.swift */; };
+		A7115E122AF7511E00ECA270 /* InsuranceAgentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E112AF7511E00ECA270 /* InsuranceAgentModel.swift */; };
+		A7115E142AF7584A00ECA270 /* PersonalizedRecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E132AF7584A00ECA270 /* PersonalizedRecommendationsViewController.swift */; };
+		A7115E162AF75AA100ECA270 /* RecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E152AF75AA100ECA270 /* RecommendationModel.swift */; };
+		A7115E1B2AF75F6A00ECA270 /* PolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E192AF75F6A00ECA270 /* PolicyTableViewCell.swift */; };
+		A7115E1C2AF75F6A00ECA270 /* PolicyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7115E1A2AF75F6A00ECA270 /* PolicyTableViewCell.xib */; };
+		A79FC02A2AF6ED3200308456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79FC0292AF6ED3200308456 /* AppDelegate.swift */; };
+		A79FC02C2AF6ED3200308456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79FC02B2AF6ED3200308456 /* SceneDelegate.swift */; };
+		A79FC02E2AF6ED3200308456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79FC02D2AF6ED3200308456 /* ViewController.swift */; };
+		A79FC0312AF6ED3200308456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79FC02F2AF6ED3200308456 /* Main.storyboard */; };
+		A79FC0332AF6ED3300308456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79FC0322AF6ED3300308456 /* Assets.xcassets */; };
+		A79FC0362AF6ED3300308456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79FC0342AF6ED3300308456 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7115E0B2AF70EAD00ECA270 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7115E0F2AF740B800ECA270 /* PersonalizeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizeOne.swift; sourceTree = "<group>"; };
+		A7115E112AF7511E00ECA270 /* InsuranceAgentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceAgentModel.swift; sourceTree = "<group>"; };
+		A7115E132AF7584A00ECA270 /* PersonalizedRecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedRecommendationsViewController.swift; sourceTree = "<group>"; };
+		A7115E152AF75AA100ECA270 /* RecommendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationModel.swift; sourceTree = "<group>"; };
+		A7115E192AF75F6A00ECA270 /* PolicyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyTableViewCell.swift; sourceTree = "<group>"; };
+		A7115E1A2AF75F6A00ECA270 /* PolicyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyTableViewCell.xib; sourceTree = "<group>"; };
+		A79FC0262AF6ED3200308456 /* State Farm Small Business.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "State Farm Small Business.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79FC0292AF6ED3200308456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79FC02B2AF6ED3200308456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A79FC02D2AF6ED3200308456 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A79FC0302AF6ED3200308456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A79FC0322AF6ED3300308456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79FC0352AF6ED3300308456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79FC0372AF6ED3300308456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79FC0232AF6ED3200308456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A79FC01D2AF6ED3200308456 = {
+			isa = PBXGroup;
+			children = (
+				A79FC0282AF6ED3200308456 /* State Farm Small Business */,
+				A79FC0272AF6ED3200308456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A79FC0272AF6ED3200308456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79FC0262AF6ED3200308456 /* State Farm Small Business.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79FC0282AF6ED3200308456 /* State Farm Small Business */ = {
+			isa = PBXGroup;
+			children = (
+				A79FC0292AF6ED3200308456 /* AppDelegate.swift */,
+				A79FC02B2AF6ED3200308456 /* SceneDelegate.swift */,
+				A79FC02D2AF6ED3200308456 /* ViewController.swift */,
+				A7115E0B2AF70EAD00ECA270 /* LoginViewController.swift */,
+				A7115E0F2AF740B800ECA270 /* PersonalizeOne.swift */,
+				A7115E132AF7584A00ECA270 /* PersonalizedRecommendationsViewController.swift */,
+				A7115E112AF7511E00ECA270 /* InsuranceAgentModel.swift */,
+				A7115E152AF75AA100ECA270 /* RecommendationModel.swift */,
+				A79FC02F2AF6ED3200308456 /* Main.storyboard */,
+				A79FC0322AF6ED3300308456 /* Assets.xcassets */,
+				A79FC0342AF6ED3300308456 /* LaunchScreen.storyboard */,
+				A79FC0372AF6ED3300308456 /* Info.plist */,
+				A7115E192AF75F6A00ECA270 /* PolicyTableViewCell.swift */,
+				A7115E1A2AF75F6A00ECA270 /* PolicyTableViewCell.xib */,
+			);
+			path = "State Farm Small Business";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79FC0252AF6ED3200308456 /* State Farm Small Business */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79FC03A2AF6ED3300308456 /* Build configuration list for PBXNativeTarget "State Farm Small Business" */;
+			buildPhases = (
+				A79FC0222AF6ED3200308456 /* Sources */,
+				A79FC0232AF6ED3200308456 /* Frameworks */,
+				A79FC0242AF6ED3200308456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "State Farm Small Business";
+			productName = "State Farm Small Business";
+			productReference = A79FC0262AF6ED3200308456 /* State Farm Small Business.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79FC01E2AF6ED3200308456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A79FC0252AF6ED3200308456 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A79FC0212AF6ED3200308456 /* Build configuration list for PBXProject "State Farm Small Business" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79FC01D2AF6ED3200308456;
+			productRefGroup = A79FC0272AF6ED3200308456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79FC0252AF6ED3200308456 /* State Farm Small Business */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79FC0242AF6ED3200308456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79FC0362AF6ED3300308456 /* LaunchScreen.storyboard in Resources */,
+				A79FC0332AF6ED3300308456 /* Assets.xcassets in Resources */,
+				A79FC0312AF6ED3200308456 /* Main.storyboard in Resources */,
+				A7115E1C2AF75F6A00ECA270 /* PolicyTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79FC0222AF6ED3200308456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7115E0C2AF70EAD00ECA270 /* LoginViewController.swift in Sources */,
+				A79FC02E2AF6ED3200308456 /* ViewController.swift in Sources */,
+				A7115E162AF75AA100ECA270 /* RecommendationModel.swift in Sources */,
+				A7115E122AF7511E00ECA270 /* InsuranceAgentModel.swift in Sources */,
+				A7115E102AF740B800ECA270 /* PersonalizeOne.swift in Sources */,
+				A79FC02A2AF6ED3200308456 /* AppDelegate.swift in Sources */,
+				A7115E1B2AF75F6A00ECA270 /* PolicyTableViewCell.swift in Sources */,
+				A79FC02C2AF6ED3200308456 /* SceneDelegate.swift in Sources */,
+				A7115E142AF7584A00ECA270 /* PersonalizedRecommendationsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A79FC02F2AF6ED3200308456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79FC0302AF6ED3200308456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A79FC0342AF6ED3300308456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79FC0352AF6ED3300308456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79FC0382AF6ED3300308456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A79FC0392AF6ED3300308456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79FC03B2AF6ED3300308456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2JW9DJC7T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "State Farm Small Business/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PramithProjects.State-Farm-Small-Business";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A79FC03C2AF6ED3300308456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2JW9DJC7T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "State Farm Small Business/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.PramithProjects.State-Farm-Small-Business";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79FC0212AF6ED3200308456 /* Build configuration list for PBXProject "State Farm Small Business" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79FC0382AF6ED3300308456 /* Debug */,
+				A79FC0392AF6ED3300308456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79FC03A2AF6ED3300308456 /* Build configuration list for PBXNativeTarget "State Farm Small Business" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79FC03B2AF6ED3300308456 /* Debug */,
+				A79FC03C2AF6ED3300308456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79FC01E2AF6ED3200308456 /* Project object */;
+}
