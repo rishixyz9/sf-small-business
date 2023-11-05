@@ -1,0 +1,24 @@
+{
+    "policies": [
+        {
+            "tag": "Business Owners Policies",
+            "score": 0.8
+        },
+        {
+            "tag": "Workers' Compensation",
+            "score": 0.7
+        },
+        {
+            "tag": "Commercial Auto Insurance",
+            "score": 0.2
+        },
+        {
+            "tag": "Small Business Life Insurance",
+            "score": 0.5
+        },
+        {
+            "tag": "Inland Marine Insurance",
+            "score": 0.3
+        }
+    ]
+} 

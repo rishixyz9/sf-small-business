@@ -1,0 +1,302 @@
+[
+    {
+        "name": "Jennifer Webb",
+        "weighted_score": 0.64,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.25,
+            "Workers' Compensation": 0.39375,
+            "Commercial Auto Insurance": 0.1,
+            "Small Business Life Insurance": 0.21874999999999997,
+            "Inland Marine Insurance": 0.0375
+        }
+    },
+    {
+        "name": "Ashley Orf",
+        "weighted_score": 0.348,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.0,
+            "Workers' Compensation": 0.7241379310344828,
+            "Commercial Auto Insurance": 0.1149425287356322,
+            "Small Business Life Insurance": 0.057471264367816105,
+            "Inland Marine Insurance": 0.10344827586206896
+        }
+    },
+    {
+        "name": "Andy Roethele",
+        "weighted_score": 0.484,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.39669421487603307,
+            "Workers' Compensation": 0.4049586776859504,
+            "Commercial Auto Insurance": 0.09917355371900827,
+            "Small Business Life Insurance": 0.0,
+            "Inland Marine Insurance": 0.09917355371900827
+        }
+    },
+    {
+        "name": "Chelsea Terry",
+        "weighted_score": 0.6519999999999999,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.392638036809816,
+            "Workers' Compensation": 0.25766871165644173,
+            "Commercial Auto Insurance": 0.0245398773006135,
+            "Small Business Life Insurance": 0.2147239263803681,
+            "Inland Marine Insurance": 0.11042944785276074
+        }
+    },
+    {
+        "name": "Thien Thai",
+        "weighted_score": 0.38,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.25263157894736843,
+            "Workers' Compensation": 0.07368421052631578,
+            "Commercial Auto Insurance": 0.16842105263157894,
+            "Small Business Life Insurance": 0.4736842105263158,
+            "Inland Marine Insurance": 0.031578947368421054
+        }
+    },
+    {
+        "name": "John Moore",
+        "weighted_score": 0.528,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.5454545454545455,
+            "Workers' Compensation": 0.26515151515151514,
+            "Commercial Auto Insurance": 0.030303030303030304,
+            "Small Business Life Insurance": 0.0,
+            "Inland Marine Insurance": 0.15909090909090906
+        }
+    },
+    {
+        "name": "Dan Ward",
+        "weighted_score": 0.408,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.5490196078431372,
+            "Workers' Compensation": 0.06862745098039215,
+            "Commercial Auto Insurance": 0.1372549019607843,
+            "Small Business Life Insurance": 0.09803921568627454,
+            "Inland Marine Insurance": 0.14705882352941177
+        }
+    },
+    {
+        "name": "Jamie Detten",
+        "weighted_score": 0.36000000000000004,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.4444444444444444,
+            "Workers' Compensation": 0.07777777777777777,
+            "Commercial Auto Insurance": 0.2,
+            "Small Business Life Insurance": 0.11111111111111112,
+            "Inland Marine Insurance": 0.16666666666666663
+        }
+    },
+    {
+        "name": "Louie Devega",
+        "weighted_score": 0.416,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.15384615384615385,
+            "Workers' Compensation": 0.4038461538461538,
+            "Commercial Auto Insurance": 0.1346153846153846,
+            "Small Business Life Insurance": 0.04807692307692309,
+            "Inland Marine Insurance": 0.25961538461538464
+        }
+    },
+    {
+        "name": "Ann Dunham",
+        "weighted_score": 0.42000000000000004,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.45714285714285713,
+            "Workers' Compensation": 0.1333333333333333,
+            "Commercial Auto Insurance": 0.17142857142857143,
+            "Small Business Life Insurance": 0.23809523809523808,
+            "Inland Marine Insurance": 0.0
+        }
+    },
+    {
+        "name": "Adam Leggett",
+        "weighted_score": 0.7480000000000001,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.427807486631016,
+            "Workers' Compensation": 0.3368983957219251,
+            "Commercial Auto Insurance": 0.0427807486631016,
+            "Small Business Life Insurance": 0.0802139037433155,
+            "Inland Marine Insurance": 0.11229946524064169
+        }
+    },
+    {
+        "name": "Mike Hart",
+        "weighted_score": 0.576,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.16666666666666669,
+            "Workers' Compensation": 0.43750000000000006,
+            "Commercial Auto Insurance": 0.02777777777777778,
+            "Small Business Life Insurance": 0.24305555555555555,
+            "Inland Marine Insurance": 0.125
+        }
+    },
+    {
+        "name": "Jarrod Rush",
+        "weighted_score": 0.6480000000000001,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.2962962962962962,
+            "Workers' Compensation": 0.30246913580246904,
+            "Commercial Auto Insurance": 0.09876543209876541,
+            "Small Business Life Insurance": 0.24691358024691357,
+            "Inland Marine Insurance": 0.05555555555555554
+        }
+    },
+    {
+        "name": "Jason Ruiz",
+        "weighted_score": 0.404,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.6336633663366337,
+            "Workers' Compensation": 0.1386138613861386,
+            "Commercial Auto Insurance": 0.1188118811881188,
+            "Small Business Life Insurance": 0.049504950495049514,
+            "Inland Marine Insurance": 0.0594059405940594
+        }
+    },
+    {
+        "name": "Dale Johnson",
+        "weighted_score": 0.556,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.1726618705035971,
+            "Workers' Compensation": 0.3525179856115107,
+            "Commercial Auto Insurance": 0.11510791366906474,
+            "Small Business Life Insurance": 0.14388489208633096,
+            "Inland Marine Insurance": 0.21582733812949637
+        }
+    },
+    {
+        "name": "Nita McBride",
+        "weighted_score": 0.692,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.3236994219653179,
+            "Workers' Compensation": 0.3236994219653179,
+            "Commercial Auto Insurance": 0.023121387283236997,
+            "Small Business Life Insurance": 0.17341040462427745,
+            "Inland Marine Insurance": 0.15606936416184972
+        }
+    },
+    {
+        "name": "Ramona Suggs-Winrow",
+        "weighted_score": 0.552,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.23188405797101447,
+            "Workers' Compensation": 0.45652173913043476,
+            "Commercial Auto Insurance": 0.05797101449275362,
+            "Small Business Life Insurance": 0.25362318840579706,
+            "Inland Marine Insurance": 0.0
+        }
+    },
+    {
+        "name": "Terre Michaels",
+        "weighted_score": 0.784,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.32653061224489793,
+            "Workers' Compensation": 0.3214285714285714,
+            "Commercial Auto Insurance": 0.02040816326530612,
+            "Small Business Life Insurance": 0.17857142857142855,
+            "Inland Marine Insurance": 0.1530612244897959
+        }
+    },
+    {
+        "name": "Jim Collins",
+        "weighted_score": 0.6799999999999999,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.23529411764705885,
+            "Workers' Compensation": 0.32941176470588235,
+            "Commercial Auto Insurance": 0.08235294117647059,
+            "Small Business Life Insurance": 0.26470588235294124,
+            "Inland Marine Insurance": 0.08823529411764706
+        }
+    },
+    {
+        "name": "Nick Bolin",
+        "weighted_score": 0.428,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.2990654205607477,
+            "Workers' Compensation": 0.1308411214953271,
+            "Commercial Auto Insurance": 0.056074766355140186,
+            "Small Business Life Insurance": 0.23364485981308414,
+            "Inland Marine Insurance": 0.2803738317757009
+        }
+    },
+    {
+        "name": "Marc Hill",
+        "weighted_score": 0.472,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.13559322033898305,
+            "Workers' Compensation": 0.47457627118644063,
+            "Commercial Auto Insurance": 0.13559322033898305,
+            "Small Business Life Insurance": 0.2542372881355932,
+            "Inland Marine Insurance": 0.0
+        }
+    },
+    {
+        "name": "Matt Rakofsky",
+        "weighted_score": 0.588,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.326530612244898,
+            "Workers' Compensation": 0.3333333333333333,
+            "Commercial Auto Insurance": 0.0272108843537415,
+            "Small Business Life Insurance": 0.17006802721088438,
+            "Inland Marine Insurance": 0.14285714285714285
+        }
+    },
+    {
+        "name": "Maria Melendez",
+        "weighted_score": 0.696,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.2758620689655173,
+            "Workers' Compensation": 0.3620689655172414,
+            "Commercial Auto Insurance": 0.02298850574712644,
+            "Small Business Life Insurance": 0.20114942528735633,
+            "Inland Marine Insurance": 0.13793103448275865
+        }
+    },
+    {
+        "name": "Randy Shockey",
+        "weighted_score": 0.548,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.1751824817518248,
+            "Workers' Compensation": 0.3576642335766423,
+            "Commercial Auto Insurance": 0.11678832116788321,
+            "Small Business Life Insurance": 0.3284671532846715,
+            "Inland Marine Insurance": 0.0218978102189781
+        }
+    },
+    {
+        "name": "Korina Hernandez",
+        "weighted_score": 0.684,
+        "match": 0,
+        "score_breakdown": {
+            "Business Owners Policies": 0.4210526315789474,
+            "Workers' Compensation": 0.20467836257309938,
+            "Commercial Auto Insurance": 0.03508771929824561,
+            "Small Business Life Insurance": 0.23391812865497078,
+            "Inland Marine Insurance": 0.10526315789473682
+        }
+    }
+]
