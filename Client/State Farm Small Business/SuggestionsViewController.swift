@@ -1,15 +1,13 @@
 //
-//  PersonalizedRecommendationsViewController.swift
+//  SuggestionsViewController.swift
 //  State Farm Small Business
 //
-//  Created by Pramith Prasanna on 11/4/23.
+//  Created by Pramith Prasanna on 11/5/23.
 //
 
 import UIKit
 
-class PersonalizedRecommendationsViewController: UIViewController, UITableViewDataSource {
-    
-    @IBOutlet weak var tableView: UITableView!
+class SuggestionsViewController: UIViewController, UITableViewDataSource {
     
     var policyResponse: PolicyResponse?
     
@@ -39,8 +37,12 @@ class PersonalizedRecommendationsViewController: UIViewController, UITableViewDa
                                         "Estate Planning": "Set up a simple estate plan, such as a will, trust, or business continuation plans."]
     
     
+
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.dataSource = self
         tableView.rowHeight = 100
         
@@ -81,24 +83,23 @@ class PersonalizedRecommendationsViewController: UIViewController, UITableViewDa
         }
         
         let nib = UINib.init(nibName: "PolicyTableViewCell", bundle: nil)
-        tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
-        
+        tableView.register(CustomSuggestionCell.self, forCellReuseIdentifier: "cell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = 0
         for policy in policyResponse!.policies {
-            if (policy.score >= 0.7) {
+            if (policy.score < 0.7) {
                 count += 1
             }
         }
         return count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
-        let policy = policyResponse!.policies[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomSuggestionCell
+        var len = policyResponse!.policies.count
+        let policy = policyResponse!.policies[len - indexPath.row]
 
         cell.image.image = UIImage(named: policy.tag)
         cell.title.text = policy.tag
@@ -108,7 +109,7 @@ class PersonalizedRecommendationsViewController: UIViewController, UITableViewDa
 
 }
 
-class CustomCell: UITableViewCell {
+class CustomSuggestionCell: UITableViewCell {
     let image = UIImageView()
     let title = UILabel()
     let desc = UILabel()
@@ -116,8 +117,8 @@ class CustomCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         layer.borderWidth = 1
-            layer.cornerRadius = 8
-            layer.masksToBounds = true
+        layer.cornerRadius = 8
+        layer.masksToBounds = true
         addSubview(image)
         addSubview(title)
         addSubview(desc)
@@ -130,13 +131,13 @@ class CustomCell: UITableViewCell {
         // Title label
         title.font = UIFont.boldSystemFont(ofSize: 17)
         title.textColor = .white
-
+        
         // Description label
         desc.font = UIFont.systemFont(ofSize: 10, weight: .light)
         desc.textColor = .lightGray
         
         
-
+        
         image.frame = CGRect(x: 0,
                              y: (100 - imageSize) / 2,
                              width: imageSize,
@@ -144,7 +145,7 @@ class CustomCell: UITableViewCell {
         
         // Title
         title.frame = CGRect(x: 100, y: 10, width: 200, height: 50)
-
+        
         // Description
         desc.frame = CGRect(x: 100, y: 50, width: 200, height: 50)
         
@@ -153,11 +154,11 @@ class CustomCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
-      super.prepareForReuse()
-      
-      image.image = nil
-      title.text = nil
-      desc.text = nil
+        super.prepareForReuse()
+        
+        image.image = nil
+        title.text = nil
+        desc.text = nil
     }
     
     
