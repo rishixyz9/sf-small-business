@@ -181,6 +181,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="1PU-mF-Mod" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="aDp-MJ-BWt"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your business type to see if it's covered (example: florist)" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAi-y6-ben">
                                 <rect key="frame" x="16" y="576" width="361" height="34"/>
@@ -211,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="4151.9083969465646" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Description View Controller-->
         <scene sceneID="SOR-Dc-7UG">
             <objects>
-                <viewController id="NOs-Wa-3Hi" customClass="ViewController" customModule="State_Farm_Small_Business" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NOs-Wa-3Hi" customClass="DescriptionViewController" customModule="State_Farm_Small_Business" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ub4-wD-oIW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,6 +231,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <segue destination="bNf-ok-BXm" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="uQe-He-hoR"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sample Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hm4-wl-wW1">
                                 <rect key="frame" x="16" y="198" width="361" height="34"/>
@@ -240,6 +246,9 @@
                         <viewLayoutGuide key="safeArea" id="erf-7s-QNS"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="hm4-wl-wW1" id="ygj-Sd-qes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQh-GE-HDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,6 +285,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="uQe-He-hoR"/>
+        <segue reference="aDp-MJ-BWt"/>
         <segue reference="xh0-gi-s3w"/>
     </inferredMetricsTieBreakers>
     <resources>

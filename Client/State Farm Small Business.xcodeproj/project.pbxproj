@@ -14,6 +14,7 @@
 		A7115E162AF75AA100ECA270 /* RecommendationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E152AF75AA100ECA270 /* RecommendationModel.swift */; };
 		A7115E1B2AF75F6A00ECA270 /* PolicyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E192AF75F6A00ECA270 /* PolicyTableViewCell.swift */; };
 		A7115E1C2AF75F6A00ECA270 /* PolicyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7115E1A2AF75F6A00ECA270 /* PolicyTableViewCell.xib */; };
+		A7115E1E2AF77BF700ECA270 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7115E1D2AF77BF700ECA270 /* DescriptionViewController.swift */; };
 		A79FC02A2AF6ED3200308456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79FC0292AF6ED3200308456 /* AppDelegate.swift */; };
 		A79FC02C2AF6ED3200308456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79FC02B2AF6ED3200308456 /* SceneDelegate.swift */; };
 		A79FC02E2AF6ED3200308456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79FC02D2AF6ED3200308456 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		A7115E152AF75AA100ECA270 /* RecommendationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationModel.swift; sourceTree = "<group>"; };
 		A7115E192AF75F6A00ECA270 /* PolicyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyTableViewCell.swift; sourceTree = "<group>"; };
 		A7115E1A2AF75F6A00ECA270 /* PolicyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PolicyTableViewCell.xib; sourceTree = "<group>"; };
+		A7115E1D2AF77BF700ECA270 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		A79FC0262AF6ED3200308456 /* State Farm Small Business.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "State Farm Small Business.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79FC0292AF6ED3200308456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79FC02B2AF6ED3200308456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				A79FC02D2AF6ED3200308456 /* ViewController.swift */,
 				A7115E0B2AF70EAD00ECA270 /* LoginViewController.swift */,
 				A7115E0F2AF740B800ECA270 /* PersonalizeOne.swift */,
+				A7115E1D2AF77BF700ECA270 /* DescriptionViewController.swift */,
 				A7115E132AF7584A00ECA270 /* PersonalizedRecommendationsViewController.swift */,
 				A7115E112AF7511E00ECA270 /* InsuranceAgentModel.swift */,
 				A7115E152AF75AA100ECA270 /* RecommendationModel.swift */,
@@ -163,6 +166,7 @@
 				A7115E0C2AF70EAD00ECA270 /* LoginViewController.swift in Sources */,
 				A79FC02E2AF6ED3200308456 /* ViewController.swift in Sources */,
 				A7115E162AF75AA100ECA270 /* RecommendationModel.swift in Sources */,
+				A7115E1E2AF77BF700ECA270 /* DescriptionViewController.swift in Sources */,
 				A7115E122AF7511E00ECA270 /* InsuranceAgentModel.swift in Sources */,
 				A7115E102AF740B800ECA270 /* PersonalizeOne.swift in Sources */,
 				A79FC02A2AF6ED3200308456 /* AppDelegate.swift in Sources */,
